@@ -1,0 +1,9 @@
+<h1>投稿ページ</h1>
+<%= form_for @post , :url => { controller: :posts, action: :create } do |f| %>
+  <%= f.label :title, "title" %>
+  <%= f.text_field :title %><br>
+  <%= f.label :content, "content" %>
+  <%= f.text_area :content %>
+  <%= f.submit "投稿" %>
+<% end %>
+<p>Find me in app/views/posts/new.html.erb</p>
